@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: clone
+        run: |
+          git clone https://github.com/mkdev55/cipython.git 
       - name: Run script
         run: |
          cat Dockerfile
