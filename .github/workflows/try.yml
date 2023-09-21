@@ -10,11 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: clone
-        run: |
-          git clone https://github.com/mkdev55/cipython.git 
       - name: Run script
         run: |
+         git clone https://github.com/mkdev55/cipython.git 
+         cd cipython
          cat Dockerfile
          docker build -t mengkheang55/test:release-v1 . 
          docker login -u mengkheang55 -p dckr_pat_N-PjfK6Vt3wmo1FS4IrgdxX9Zag
