@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Run script
         run: |
-         ls && pwd
+         ls
          docker build -t mengkheang55/test:release-v1 .
          docker login -u mengkheang55 -p dckr_pat_N-PjfK6Vt3wmo1FS4IrgdxX9Zag
          docker push mengkheang55/test:release-v1
