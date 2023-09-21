@@ -14,8 +14,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: test
-       run: |
-       ps
+         run:|
+          docker build -t test:release-v1 .
+
+     - name: push
+         run:|
+           docker login -u mengkheang55 -p dckr_pat_N-PjfK6Vt3wmo1FS4IrgdxX9Zag
+           docker push mengkheang55/test:release-v1
      
     
   
