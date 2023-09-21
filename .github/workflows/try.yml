@@ -19,3 +19,6 @@ jobs:
          docker login -u mengkheang55 -p dckr_pat_N-PjfK6Vt3wmo1FS4IrgdxX9Zag
          docker push mengkheang55/test:release-v1
          
+      - name: ssh-to-server
+        run: |
+          ssh 
